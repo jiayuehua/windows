@@ -2,19 +2,19 @@
 SendRaw !
 return
 2::
-SendRaw @
+SendInput {Text}=
 return
 3::
 SendRaw #
 return
 4::
-SendRaw $
+SendInput {Text}+
 return
 5::
-SendRaw `%
+SendInput {Text}\
 return
 6::
-SendRaw ^
+SendInput {Text}~
 return
 7::
 SendRaw &
@@ -59,21 +59,38 @@ return
 SendInput {Text}0
 return
 SC01A::
-SendInput {Text}[
-return
-SC01B::
 SendInput {Text}{
 return
-+SC01A::
-SendInput {Text}]
-return
-+SC01B::
+SC01B::
 SendInput {Text}}
 return
++SC01A::
+SendInput {Text}[
+return
++SC01B::
+SendInput {Text}]
+return
 SC029::
-SendInput {Text}~
+SendInput {Text}^
 return
 +SC029::
-SendInput {Text}`
+SendInput {Text}``
 return
-
+SC028::
+SendInput {Text}"
+return
++SC028::
+SendInput {Text}'
+return
+SC02B::
+SendInput {Text}|
+return
++SC02B::
+SendInput {Text}`%
+return
+SC00D::
+SendInput {Text}$
+return
++SC00D::
+SendInput {Text}@
+return
